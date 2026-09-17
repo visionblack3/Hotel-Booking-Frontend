@@ -1,6 +1,7 @@
 import axios from "axios";
 
-const baseURL = import.meta.env.VITE_API_BASE_URL || "http://100.58.64.111:8080";
+// Fall back to "/api" so Vercel's rewrite proxy can intercept requests
+const baseURL = import.meta.env.VITE_API_BASE_URL || "/api";
 
 const client = axios.create({
   baseURL,
