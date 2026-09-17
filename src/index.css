@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  background-color: #f5f1e7;
+  color: #182620;
+  font-family: "Inter", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-display {
+  font-family: "Fraunces", serif;
+}
+
+::selection {
+  background-color: #a9793b;
+  color: #f5f1e7;
+}
+
+:focus-visible {
+  outline: 2px solid #a9793b;
+  outline-offset: 2px;
+}
+
+/* Ledger-style table rows */
+.ledger-row {
+  border-bottom: 1px solid #d9d2c0;
+}
+.ledger-row:last-child {
+  border-bottom: none;
+}
+
+input,
+select {
+  font-family: "Inter", sans-serif;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
